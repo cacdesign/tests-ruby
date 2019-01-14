@@ -19,14 +19,13 @@ if word.start_with?("qu")
 elsif
 
   #translates a word beginning with a vowel
-    if word.start_with?('a','e','i','o','u', 'y') 
+    if word[0] =~ /^[aeiouy]/ 
         word << "ay" 
 
   #translates a word beginning with a consonant
     elsif  
       
-
-          if word[1] == 'a' || word[1] == 'e' || word[1] == 'i' || word[1] == 'o' || word[1] == 'u' || word[1] == 'y' then
+          if word[1] =~ /^[aeiouy]/  then
           word[0]= ""
           word << "#{word1}ay" 
 
@@ -38,7 +37,7 @@ elsif
               word[0]= ""
               word << "#{word1}#{word2}#{word3}ay"
 
-              elsif word[2] == 'a' || word[2] == 'e' || word[2] == 'i' || word[2] == 'o' || word[2] == 'u' || word[2] == 'y' then
+              elsif word[2] =~ /^[aeiouy]/ then
               word[0]= ""
               word[0]= ""
               word << "#{word1}#{word2}ay"

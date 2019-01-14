@@ -1,3 +1,5 @@
+#who is the biggest number
+
 def who_is_bigger (a, b, c)
 	
 	if a == nil || b == nil || c == nil then
@@ -14,6 +16,8 @@ def who_is_bigger (a, b, c)
 end
 
 
+#crazy stuff on strings
+
 def reverse_upcase_noLTA (a)
 	
   n = a.reverse.upcase.gsub(/([LTA])/, "")
@@ -21,7 +25,9 @@ def reverse_upcase_noLTA (a)
 end
 
 
-#A REVOIR EN UNE LIGNE
+
+#42 finder
+
 def array_42 (a)
 b = false
   a.each do |x|
@@ -31,6 +37,8 @@ b = false
   return b
 end
 
+
+#crazy stuff on arrays
 
 def magic_array (a)
 
